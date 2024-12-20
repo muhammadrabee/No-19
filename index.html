@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <h1 id="heading">Task List</h1>
+        <div class="input">
+            <form id="parent-form">
+                <input type="text" class="txt-input" id="task-name" placeholder="Enter Task Name">
+                <input type="text" class="txt-input" id="task-description" placeholder="Enter Task Description">
+                <select id="option" class="txt-input">
+                    <option>Most Important</option>
+                    <option>Very Important</option>
+                    <option>Important</option>
+                    <option>Not Important</option>
+                </select>
+                <button id="btn-add" class="btn-input" value="submit">Add Task</button>
+                <button id="btn-reset" class="btn-input" value="Reset">Reset </button>
+            </form>
+        </div>
+        <div class="output">
+
+            <table id="output-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Priority</th>
+                        <th>Progress</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="new-list">
+                    <!-- <tr>
+                        <td>Muhammad Rabee</td>
+                        <td>Muhammad Rabee</td>
+                        <td>Muhammad Rabee</td>
+                        <td>Muhammad Rabee</td>
+                        <td>Muhammad Rabee</td>
+                    </tr>
+                    <tr>
+                        <td>Muhammad Rabee</td>
+                        <td>Muhammad Rabee</td>
+                        <td>Muhammad Rabee</td>
+                        <td>Muhammad Rabee</td>
+                        <td>Muhammad Rabee</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
